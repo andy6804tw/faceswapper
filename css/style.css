@@ -1,0 +1,9 @@
+#image1, #image2{
+    /* max-width: 200px; */
+    max-height: 250px;
+  }
+
+.juxtapose{
+    max-width: 450px;
+    margin: auto;
+}

@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Oswald);
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  background: #303447;
+  position: relative;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100%;
+  max-height: 750px;
+}
+.header .grid-face {
+  position: absolute;
+  min-width: 100%;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.header .grid-face .face {
+  position: relative;
+  float: left;
+  width: 25%;
+  opacity: 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+.header .grid-face .face .mask {
+  background: #303447;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+.header .grid-face .face:nth-child(4n+1) {
+  clear: left;
+}
+@media screen and (min-width: 40em) {
+  .header .grid-face .face {
+    width: 20%;
+  }
+  .header .grid-face .face:nth-child(5n+1) {
+    clear: left;
+  }
+  .header .grid-face .face:nth-child(4n+1) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 55em) {
+  .header .grid-face .face {
+    width: 16.666666666%;
+  }
+  .header .grid-face .face:nth-child(6n+1) {
+    clear: left;
+  }
+  .header .grid-face .face:nth-child(5n+1) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 72em) {
+  .header .grid-face .face {
+    width: 12.5%;
+  }
+  .header .grid-face .face:nth-child(8n+1) {
+    clear: left;
+  }
+  .header .grid-face .face:nth-child(6n+1) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 90em) {
+  .header .grid-face .face {
+    width: 11.1111111%;
+  }
+  .header .grid-face .face:nth-child(9n+1) {
+    clear: left;
+  }
+  .header .grid-face .face:nth-child(8n+1) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 100em) {
+  .header .grid-face .face {
+    width: 10%;
+  }
+  .header .grid-face .face:nth-child(10n+1) {
+    clear: left;
+  }
+  .header .grid-face .face:nth-child(9n+1) {
+    clear: none;
+  }
+}
+
+.table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.table .content {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+}
+.table .content > h1 {
+  display: inline-block;
+  color: #fff;
+  opacity: 0;
+  padding-bottom: 0.3em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.table .content > p {
+  display: inline-block;
+  color: #fff;
+  opacity: 0;
+  letter-spacing: 2px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+.table .content > .btn {
+  /* background: #f35535;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1em;
+  padding: 1em; */
+  opacity: 0;
+  -webkit-transition: background 350ms ease;
+  transition: background 350ms ease;
+}
+/* .table .content > .btn:hover, .table .content > .btn:focus {
+  background: #c2442a;
+} */
+.table .content > .btn > span {
+  /* background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48bGluZSBzdHJva2Utd2lkdGg9IjEiIHgxPSIiIHkxPSIiIHgyPSIiIHkyPSIiIHN0cm9rZT0iI2ZmZmZmZiIgb3BhY2l0eT0iIj48L2xpbmU+PHBhdGggZD0iTTE0LjAzNyAyLjg4YzcuMTE0IDAgMTIuODk4IDUuNjk5IDEzLjA3MCAxMi43OTJoMy45MzNsLTUuODg2IDYuNTYyLTUuODg2LTYuNTYyaDQuNTdjLTAuMTcxLTUuMjgyLTQuNDkxLTkuNTEyLTkuOC05LjUxMi01LjQxOCAwLTkuODA4IDQuNDA1LTkuODA4IDkuODRzNC4zOSA5Ljg0IDkuODA4IDkuODRjMi4xNzMgMCA0LjE3OS0wLjcxIDUuODA1LTEuOTA5bDIuMjQ4IDIuNDA2Yy0yLjIxOSAxLjc0Mi01LjAxNCAyLjc4Mi04LjA1MyAyLjc4Mi03LjIyMiAwLTEzLjA3Ny01Ljg3NC0xMy4wNzctMTMuMTJzNS44NTQtMTMuMTIgMTMuMDc3LTEzLjEyeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg==);
+  background-size: cover;
+  display: inline-block;
+  width: 24px;
+  height: 24px; */
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.header img {
+  width: 100% !important;
+  height: auto;
+  display: block;
+}
+
+section {
+  display: block;
+  padding: 3rem 0;
+  text-align: center;
+}
+
