@@ -7,3 +7,20 @@
     max-width: 450px;
     margin: auto;
 }
+
+/* Footer */
+#site-footer {
+  /* position: relative; */
+  /* width: 100%; */
+  background: #6c567b;
+  height: 60px;
+}
+.copy{
+  position: absolute;
+  bottom: 0;
+  font-size:12px;
+  text-align:center;
+  color: white;
+  font-weight: 300;
+  width: 100%;
+}

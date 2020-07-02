@@ -1,6 +1,6 @@
 .sectionFaceShape { 
-    display: -webkit-box; 
-    display: flex; 
+    /* display: -webkit-box;  */
+    /* display: flex;  */
     /* -webkit-box-align: center; 
             align-items: center; 
     -webkit-box-pack: center; 
@@ -8,7 +8,10 @@
     background: linear-gradient(135deg, rgb(82, 0, 82), #303447);
     -webkit-filter: saturate(200%) sepia(50%) hue-rotate(-26deg);
             filter: saturate(200%) sepia(50%) hue-rotate(-26deg);
-    color: white;;
+    color: white;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
   }
   
   container {
@@ -18,7 +21,7 @@
             transform: scale(.8);
   }
   
-  .sectionFaceShape p {
+  .sectionFaceShape .char {
     margin: 0;
     word-break: break-all;
     text-align: right;

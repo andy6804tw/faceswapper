@@ -15,7 +15,7 @@ function pick() {
 function build() {
   container.innerHTML = '<div class="shape"></div>' +
     sequence(50, () => `
-      <p style="--offset: ${ r(50, 100) }; color: ${ pick('#F0FFF3', '#fff') }">
+      <p class="char" style="--offset: ${ r(50, 100) }; color: ${ pick('#F0FFF3', '#fff') }">
         ${ generateText(ri(20, 100)) }
       </p>
     `);
