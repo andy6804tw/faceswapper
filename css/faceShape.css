@@ -1,0 +1,56 @@
+.sectionFaceShape { 
+    display: -webkit-box; 
+    display: flex; 
+    /* -webkit-box-align: center; 
+            align-items: center; 
+    -webkit-box-pack: center; 
+            justify-content: center;   */
+    background: linear-gradient(135deg, rgb(82, 0, 82), #303447);
+    -webkit-filter: saturate(200%) sepia(50%) hue-rotate(-26deg);
+            filter: saturate(200%) sepia(50%) hue-rotate(-26deg);
+    color: white;;
+  }
+  
+  container {
+    max-width: 600px; height: 600px;
+    overflow: hidden;
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+  }
+  
+  .sectionFaceShape p {
+    margin: 0;
+    word-break: break-all;
+    text-align: right;
+    line-height: 1.1;
+    font-size: 10px;
+    color: #F0FFF3;
+    --offset: 50;
+    -webkit-mask: -webkit-gradient(linear, right top, left top, from(#fff), to(transparent));
+    -webkit-mask: linear-gradient(to left, #fff, transparent calc(var(--offset) * 1%));
+            mask: -webkit-gradient(linear, right top, left top, from(#fff), to(transparent));
+            mask: linear-gradient(to left, #fff, transparent calc(var(--offset) * 1%));
+  }
+  
+  .sectionFaceShape span {
+    text-shadow:
+      10px 0 10px currentColor,
+      -10px 0 10px currentColor;
+  }
+  
+  .shape {
+    width: 400px; height: 600px;
+    float: right;
+    shape-outside: polygon(
+      0.25% 2px, 99.94% 0.27%, 99.75% 100%, 19.87% 100.03%, 0 100%, 30.61% 100.07%, 
+      37.38% 99.82%, 44.21% 99.38%, 50.92% 99.34%, 71.39% 98.43%, 76.61% 98.79%, 
+      82.65% 97.6%, 85.9% 95.73%, 90.12% 93.85%, 88.45% 89.91%, 87.41% 87.1%, 
+      85.48% 85.09%, 84.96% 82.33%, 88.66% 81.41%, 90.55% 79.29%, 91.75% 77.23%, 
+      91.23% 75.11%, 88.48% 73.75%, 90.93% 72.26%, 92.34% 70.16%, 91.59% 67.66%, 
+      89.87% 64.91%, 87.01% 63.42%, 89.87% 62.01%, 93.04% 60.71%, 96.53% 58.57%, 
+      97.8% 55.26%, 95.36% 53.2%, 91.46% 51.56%, 86.6% 49.21%, 83.43% 47%, 
+      79.27% 44.12%, 77.05% 40.66%, 75.51% 37.07%, 75.49% 33.04%, 76.3% 28.93%, 
+      75.99% 25.46%, 74.57% 22.25%, 72.88% 18.96%, 69.97% 15.51%, 66.59% 12.23%, 
+      62.29% 9.2%, 57.33% 7.06%, 52.77% 5.2%, 46.55% 3.55%, 38.59% 1.5%, 27.73% 0.92%
+    );
+  }
