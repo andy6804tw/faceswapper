@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CodePen - Beautiful Portraits grid</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/faceShape.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 </head>
 
@@ -274,10 +275,10 @@
         </div>
         </div>
     </section>
-    <section class="sectionIntro">
+    <section class="container-fluid sectionIntro">
         <div class="row justify-content-center align-items-center">
-            <div class="col-6 p-5" id="svgSource"></div>
-            <div class="col-4 p-5">
+            <div class="col-5" id="svgSource"></div>
+            <div class="col-4">
                 <h3>Description</h3>
                 <p>Move faces in an image to swap them. Set the points that match the face features, highlight the
                     corresponding points, and move it to the right position. Rotate, zoom, and edit faces and tweak the
@@ -285,15 +286,21 @@
             </div>
         </div>
     </section>
-    <section class="sectionFaceShape" id="anchor2">
-        <div class="row justify-content-between">
+    <section class="container-fluid sectionFaceShape" id="anchor2">
+        <div class="row justify-content-between align-items-center animated" id="fadeInLeft">
 
-            <container class="col-8"></container>
+            <container class="col-sm-12 col-md-5 " ></container>
 
-            <div class="col-3">
-                <div>
-                    Face Swap
-                </div>
+            <div class="col-sm-12 col-md-6 mr-md-5 animated delay-1s" id="fadeIn">
+                <h1 class="pb-4">FaceSwap has ethical uses</h1>
+                <p>
+                    <ul class="text-left">
+                        <li class="pb-1">FaceSwap is not for creating inappropriate content.</li>
+                        <li class="pb-1">FaceSwap is not for changing faces without consent or with the intent of hiding its use.</li>
+                        <li class="pb-1">FaceSwap is not for any illicit, unethical, or questionable purposes.</li>
+                        <li class="pb-1">FaceSwap exists to experiment and discover AI techniques, for social or political commentary, for movies, and for any number of ethical and reasonable uses.</li>
+                      </ul>
+                </p>
             </div>
         </div>
 
@@ -307,6 +314,7 @@
     <script src="./js/faceSwap.js"></script>
     <script src="./js/svgAnimated.js"></script>
     <script src="./js/faceShape.js"></script>
+    <script src="./js/animate.js"></script>
 </body>
 
 </html>
