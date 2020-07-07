@@ -4,4 +4,5 @@ Flask-Uploads==0.2.1
 opencv-python
 matplotlib
 dlib
+scipy
 gunicorn
