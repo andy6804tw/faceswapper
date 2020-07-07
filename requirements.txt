@@ -4,4 +4,4 @@ Flask-Uploads==0.2.1
 opencv-python
 matplotlib
 dlib
-gunicorn==19.6.0
+gunicorn
