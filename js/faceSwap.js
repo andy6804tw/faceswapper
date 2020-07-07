@@ -22,7 +22,7 @@ const postImage = async () => {
   const image2 = file2.split(",")[1];
   document.getElementById("loading").classList.remove("d-none");
   // console.log(image1);
-  axios.post(`http://localhost:5000/swap`, {
+  axios.post(`https://faceswaper.herokuapp.com/swap`, {
     image1,
     image2
   })
