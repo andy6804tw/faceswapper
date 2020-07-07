@@ -15,7 +15,7 @@ app.config.from_object(config)
 configure_uploads(app, upFile)
 
 app.register_blueprint(swap, url_prefix='/swap')
-app.register_blueprint(upload, url_prefix='/upload')
+# app.register_blueprint(upload, url_prefix='/upload')
 
 @app.route('/test', methods=['GET'])
 def home():
