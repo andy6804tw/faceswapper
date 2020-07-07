@@ -5,4 +5,5 @@ opencv-python
 matplotlib
 dlib
 scipy
+opencv-contrib-python
 gunicorn
