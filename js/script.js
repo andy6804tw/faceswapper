@@ -15,7 +15,7 @@ var s,
       this.settings = $.extend(this.settings, options);
       s = this.settings;
       this.loadPortraits();
-      this.initEvents();
+      // this.initEvents();
     },
 
     loadPortraits: function() {
