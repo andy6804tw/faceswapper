@@ -20,3 +20,5 @@
 ### Voronoi Diagram
 透過Voronoi Diagram方法可將所有距離黄色點最近的點劃為同一區域，事實上，這些黃色點就是Delaunay Triangulation三角形外切圓的圓心
 ![](https://i.imgur.com/eojxBvv.png)
+
+### 換臉的困難點
