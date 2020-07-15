@@ -22,7 +22,7 @@ var s,
       var genero = ["men", "women"];
       s.face.find('img').each(function(i) {
         var rand = genero[Math.floor(Math.random() * genero.length)];
-        $(this).attr('src', 'http://api.randomuser.me/portraits/' + rand + '/' + i + '.jpg'); //http://randomuser.me
+        $(this).attr('src', 'https://api.randomuser.me/portraits/' + rand + '/' + i + '.jpg'); //http://randomuser.me
       });
       s.face.last().find('img').one('load', function() {
         portraitsGrid.sequenceInOut(500, s.transitionGridIn, false, 800, 2700, s.transitionTitlesIn, 2500);
