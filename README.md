@@ -25,3 +25,10 @@
 人腦可以很輕易的識別每個人的臉部特徵，並且能夠簡單的將兩個人臉對調。但是如果要完全透過電腦自動將人臉對調且不會讓人發現破綻其實是很複雜的一件事。人必須要透過專業才能PS出一個擬真的圖像，更何況是一個未經訓練的電腦。
 
 以下整理四個換臉的困難點。首先人的面部特徵都大不相同，此外其實人臉並非完全對稱的。第二個是臉部的燈光照明與皮膚色調相結合可以使圖像看起來非常不同。第三個是當相機拍攝的角度不同每張照片的人臉角度也大不相同。最後一點是人的膚質都大不相同，如果硬是把臉部對調會發現在邊緣部分會很違和。
+
+## FaceSwap : Step by Step using OpenCV
+### Face Alignment
+人臉校準（alignment）是給定一張臉，找出需要的特徵點的位置，比如鼻子、眼睛、上嘴脣下側等等點的位置。下圖是[1adrianb/face-alignment](https://github.com/1adrianb/face-alignment)使用深度學習模型所得到的人臉 landmarks。如果我們要將某個人臉貼到目標的臉型上，透過 face alignment 的 landmarks 知道了點的位置之後再做一下位置驅動的變形，臉就能成功貼到目標物體上了。在進行 alignment 前，需要先取得 facial landmarks 才能進行校準，目前最常用的 facial landmark model 則是 Dlib 所提供的 68 點模型。
+
+
+![](https://github.com/1adrianb/face-alignment/raw/master/docs/images/2dlandmarks.png)
