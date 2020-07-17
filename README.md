@@ -42,3 +42,9 @@
 - Voronoi Diagram
 透過Voronoi Diagram方法可將所有距離黄色點最近的點劃為同一區域，事實上，這些黃色點就是Delaunay Triangulation三角形外切圓的圓心
 ![](https://i.imgur.com/eojxBvv.png)
+
+#### 1.4 Affine warp triangles
+這個步驟是將目標跟要被驅動的人臉找出 Delaunay Triangulation，之後再透過兩張圖彼此間的三角形頂點做臉部的融合。其作法就是將源面三角形仿射扭曲到目標面上。
+
+![](https://i.imgur.com/T7n2jDM.png)
+[reference](http://www.magicandlove.com/blog/2018/08/20/)
