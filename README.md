@@ -34,3 +34,5 @@
 
 #### 1.1 Facial Landmark Detection
 如果我們要將某個人臉貼到目標的臉型上，透過 face alignment 的 landmarks 知道了點的位置之後再做一下位置驅動的變形，臉就能成功貼到目標物體上了。在進行 alignment 前，需要先取得 facial landmarks 才能進行校準，目前最常用的 facial landmark model 則是 Dlib 所提供的 68 點模型。
+
+![](https://i.imgur.com/5DSa16y.png)
