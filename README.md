@@ -49,7 +49,11 @@
 ![](https://i.imgur.com/T7n2jDM.png)
 [reference](http://www.magicandlove.com/blog/2018/08/20/)
 
+下圖為上述所有提到的方法最終的結果。我們可以發現人臉可以成功的對調了，但是似乎看起來有點違和感。尤其是在邊緣的部分，一看過去就能發現這是透過剪貼的感覺。接下來第二步驟 Seamless Cloning 就來跟各位介紹，如何將 mask 可以完整的融合到目標圖片中。
+
 ![](https://i.imgur.com/zZZ3TqR.png)
 
 
 ### 2. Seamless Cloning
+在 OpenCV 中有一個函式 `cv2.seamlessClone()` 專門可以將 mask 圖片完美的融合在目標影像中。我們可以從一個圖像中復制
+某一個物件，然後將此物件粘貼到另一圖像中，使合成看起來無縫且自然。
