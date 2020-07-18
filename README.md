@@ -18,6 +18,8 @@ All pictures are from [This Person Does Not Exist](https://thispersondoesnotexis
 - FaceSwap is not for changing faces without consent or with the intent of hiding its use.
 - FaceSwap is not for any illicit, unethical, or questionable purposes.
 
+## Tutorial
+Please see the following repository for more details about this application. → [face-swap-tutorial](https://github.com/1010code/face-swap-tutorial)
 
 ## Reference
 [Fast Face-swap Using Convolutional Neural Networks](https://arxiv.org/pdf/1611.09577.pdf)
