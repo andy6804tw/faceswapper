@@ -49,4 +49,7 @@
 ![](https://i.imgur.com/T7n2jDM.png)
 [reference](http://www.magicandlove.com/blog/2018/08/20/)
 
+![](https://i.imgur.com/zZZ3TqR.png)
+
+
 ### 2. Seamless Cloning
