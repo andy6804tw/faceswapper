@@ -13,6 +13,12 @@
 ## Image Credits
 All pictures are from [This Person Does Not Exist](https://thispersondoesnotexist.com/).
 
+## FaceSwap has ethical uses
+- FaceSwap is not for creating inappropriate content.
+- FaceSwap is not for changing faces without consent or with the intent of hiding its use.
+- FaceSwap is not for any illicit, unethical, or questionable purposes.
+
+
 ## Reference
 [Fast Face-swap Using Convolutional Neural Networks](https://arxiv.org/pdf/1611.09577.pdf)
 
