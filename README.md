@@ -1,9 +1,15 @@
 # Face Swap Application
+![](screenshot/demo.gif)
 
 ## Results
 | Source | Destination | Result |
 | --- | --- | --- |
-|![](demo/test1-1.jpg) | ![](demo/test1-2.jpg) | ![](demo/test1-3.jpg) |
+|![](screenshot/test1-1.jpg) | ![](screenshot/test1-2.jpg) | ![](screenshot/test1-3.jpg) |
+|![](screenshot/test2-1.jpg) | ![](screenshot/test2-2.jpg) | ![](screenshot/test2-3.jpg) |
+|![](screenshot/test3-1.jpg) | ![](screenshot/test3-2.jpg) | ![](screenshot/test3-3.jpg) |
+
+## Image Credits
+All pictures are from [This Person Does Not Exist](https://thispersondoesnotexist.com/).
 
 ## Reference
 [Fast Face-swap Using Convolutional Neural Networks](https://arxiv.org/pdf/1611.09577.pdf)
