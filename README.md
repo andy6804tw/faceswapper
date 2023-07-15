@@ -3,6 +3,8 @@
 
 [Website](https://andy6804tw.github.io/faceswapper/)
 
+> Announcement: Due to the discontinuation of the free tier service by Heroku starting from November 28th, 2022, the functionality of this website is temporarily unavailable.
+
 ## Results
 | Source | Destination | Result |
 | --- | --- | --- |
